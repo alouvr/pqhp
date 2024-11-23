@@ -1,0 +1,24 @@
+
+*{
+    font-family: "Inter";
+}
+/* Navbar */
+.navtop {
+    border: 1px solid #000006;
+    background-color: #DDD8E9;
+} 
+
+.nav-link{
+    color: #3D2A62;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    background-color: #DDD8E9;
+} 
+
+.footerlink{
+    color: #3D2A62;
+    font-weight: normal;
+}
