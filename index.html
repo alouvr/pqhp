@@ -7,11 +7,9 @@
     <title>PQHP</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index_styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
 </head>
-
-<!-- I used a dropdown in the navbar and an accordion layout. -->
 
 <body>
     <!-- Bootstrap Script -->
@@ -22,7 +20,9 @@
     <!-- Navbar -->
     <nav id="top" class="navbar navbar-expand-lg navtop">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><strong>|PQHP</strong></a>
+            <a class="navbar-brand" href="index.html">
+                <img src="Images/website name.svg" width="90%" height="90%" alt="">
+            </a>
             <!-- Button for navbar toggler/hamburger menu -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent">
@@ -47,6 +47,151 @@
             </div>
         </div>
     </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card">
+                    <img class="card-img rounded-0" src="Images/Screenshot 2024-11-23 172529.png">
+                    <div class="card-img-overlay">
+                        <h3 class="card-title">PITTSBURGH QUEER</h3>
+                        <h3 class="card-title">HISTORY PROJECT</h3>
+                        <p class="card-text">An oral history and media initiative focusing on LGBTQ after-hours
+                            nightlife in Pittsburgh.</p>
+                        <button type="button">See More</button>
+                    </div>
+                </div>
+                <!-- <img src="Images/Screenshot 2024-11-23 172529.png" class="d-block w-100" alt="..."> -->
+            </div>
+            <div class="carousel-item">
+                <img src="Images/Screenshot 2024-11-23 172714.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="Images/Screenshot 2024-11-23 172529.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- About -->
+    <div class="about">
+        <div class="row">
+            <!-- Empty Column for left spacing -->
+            <div class="col-1"></div>
+            <div class="col-6 bg-primary">
+                <div class="aboutBlurb">
+                    <p>
+                        The Pittsburgh Queer History Project (PQHP) is an oral history and media
+                        initiative, focusing on LGBTQ after-hours nightlife in Pittsburgh, PA from 1960 to 1990. Founded
+                        by
+                        Harrison Apple in 2012, the project began as an investigation of gay-owned-and-operated
+                        after-hours
+                        nightclubs where fraternal organization charters acted as semi-legal shelters for sex and social
+                        membership...
+                    </p>
+                    <p>
+                        Read More
+                    </p>
+                </div>
+            </div>
+            <!-- Empty column for middle -->
+            <div class="col-1 bg-danger"></div>
+            <div class="col-3 bg-success">
+                <h1 class="aboutTitle">ABOUT</h1>
+                <h1 class="aboutTitle">THE</h1>
+                <h1 class="aboutTitle">PQHP</h1>
+            </div>
+            <!-- Empty Column for right side -->
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+
+    <!-- Past-Events -->
+    <div class="pastEvents">
+
+        <div class="singleEvent row">
+            <div class="col-sm-10 col-md-1">
+                <div class="date">
+                    <h4>JULY</h4>
+                    <h4>2023</h4>
+                </div>
+                <div class="date2">
+                    <h4>JULY 2023</h4>
+                </div>
+            </div>
+            <div class="col-sm-10 col-md-1"></div>
+            <div class="col-7 ">
+                <a class="eventTitle" href="https://google.com">
+                    <h1>MS89 NORM TAPES</h1>
+                </a>
+                <p>Join us on Friday July 14th at Contemporary Craft @sccpgh.</p>
+            </div>
+            <div class="col-1"></div>
+            <div class="readMore col-md-2 ">
+                <a href="https://google.com">Read More
+                </a>
+            </div>
+        </div>
+
+        <div class="singleEvent row">
+            <div class="col-sm-10 col-md-1">
+                <div class="date">
+                    <h4>JUNE</h4>
+                    <h4>2023</h4>
+                </div>
+                <div class="date2">
+                    <h4>JUNE 2023</h4>
+                </div>
+            </div>
+            <div class="col-sm-10 col-md-1"></div>
+            <div class="col-7 ">
+                <a class="eventTitle" href="https://google.com">
+                    <h1>MS PITTSBURGH LEATHER 1997</h1>
+                </a>
+                <p>Calling all OG Pgh Leather folks, for an open reunion sponsored by the MS89 series!</p>
+            </div>
+            <div class="col-1"></div>
+            <div class="readMore col-md-2 ">
+                <a href="https://google.com">Read More
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- 
+    <div class="pastevents">
+        <div class="row">
+            <div class="col-1 bg-success">.col-6<br>Subsequent columns continue along the new line.</div>
+            <div class="col-5 bg-primary">.col-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a
+                new line as one contiguous unit.</div>
+            <div class="col-2 bg-danger">.col-6<br>Subsequent columns continue along the new line.</div>
+            <div class="col-3 bg-success">.col-6<br>Subsequent columns continue along the new line.</div>
+            <div class="col-1 bg-primary">.col-6<br> columns continue along the new line.</div>
+        </div>
+    </div> -->
+
 
     <!-- Footer -->
     <ul id="bottom" class="footer nav">

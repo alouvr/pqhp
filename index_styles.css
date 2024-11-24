@@ -1,0 +1,155 @@
+* {
+    font-family: "Inter";
+}
+
+a{
+    text-decoration: none;
+}
+
+/* General Row Structure Div */
+.row {
+    max-width: 100%;
+}
+
+/* Navbar */
+.navtop {
+    /* border: 1px solid #000006; */
+    background-color: #DDD8E9;
+    padding: 0.5% 5%;
+}
+
+.nav-link {
+    color: #3D2A62;
+    font-weight: bold;
+}
+
+/* Carousel */
+
+.card-img-overlay {
+    margin: 10%;
+}
+
+.card-img-overlay>h3 {
+    color: #DDD8E9;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.card-img-overlay>p {
+    color: #DDD8E9;
+}
+
+.card-img-overlay>button {
+    font-weight: bold;
+    padding: 1% 3%;
+    color: white;
+    background-color: #3D2A62;
+}
+
+/* About Section */
+.about {
+    margin-top: 5%;
+}
+
+.aboutTitle {
+    font-weight: bold;
+}
+
+.aboutBlurb {
+    margin: 5%;
+}
+
+/* Past Events Section */
+.pastEvents {
+    margin: 5%;
+}
+
+.readMore {
+    text-align: center;
+    margin: auto;
+}
+
+.date {
+    padding: 10%;
+    margin: auto;
+}
+
+.date2 {
+    color: #3D2A62;
+    display: none;
+}
+
+.readMore>a {
+    font-weight: bold;
+    color: black;
+}
+
+.singleEvent {
+    padding-top: 2%;
+    border-bottom: 2px solid black
+}
+
+.singleEvent:hover {
+    background-color: rgba(87, 60, 141, 0.2);
+}
+
+.eventTitle{
+    color: #3D2A62;
+    font-weight: bold;
+}
+
+
+
+/* Footer */
+.footer {
+    padding: 0.5% 5%;
+    background-color: #DDD8E9;
+}
+
+.footerlink {
+    color: #3D2A62;
+    font-weight: normal;
+}
+
+
+
+
+/* Phone media query */
+@media screen and (max-width: 800px) {
+
+    /* Carousel */
+    .card-img-overlay {
+        margin: 5%;
+    }
+
+    .card-img-overlay>h3 {
+        color: #DDD8E9;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .card-img-overlay>button {
+        font-weight: bold;
+        padding: 1.2% 3%;
+        color: white;
+        background-color: #3D2A62;
+        font-size: 0.6rem;
+    }
+
+    /* Past Events */
+    .readMore {
+        text-align: left;
+        margin: auto;
+        margin-bottom: 5%;
+    }
+
+    .date {
+        color: #3D2A62;
+        display: none;
+    }
+
+    .date2 {
+        color: #3D2A62;
+        display: block;
+    }
+}
