@@ -4,6 +4,7 @@
 
 a{
     text-decoration: none;
+    color:#000;
 }
 
 /* General Row Structure Div */
@@ -15,7 +16,7 @@ a{
 .navtop {
     /* border: 1px solid #000006; */
     background-color: #DDD8E9;
-    padding: 0.5% 5%;
+    padding: 0.5%;
 }
 
 .nav-link {
@@ -30,13 +31,13 @@ a{
 }
 
 .card-img-overlay>h3 {
-    color: #DDD8E9;
+    color: #ffffff;
     font-weight: bold;
     font-size: 2rem;
 }
 
 .card-img-overlay>p {
-    color: #DDD8E9;
+    color: #ffffff;
 }
 
 .card-img-overlay>button {
@@ -51,15 +52,115 @@ a{
     margin-top: 5%;
 }
 
-.aboutTitle {
-    font-weight: bold;
-}
-
 .aboutBlurb {
     margin: 5%;
 }
 
+#readMoreButton {
+    all: unset;
+    text-decoration: underline;
+}
+
+.aboutLong {
+    display: none;
+}
+
+.aboutLogo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.aboutLogoMobile {
+    display: none;
+}
+
+/* Events List Title*/
+.eventsList {
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, #000 50%, transparent 50%) 100% 1;
+}
+
+.eventsListTitle {
+    text-align: center;
+}
+
+.eventsList>hr {
+    margin: auto;
+    width: 8%;
+    border-width: 0.2rem;
+    border-color: #000;
+    background-color: #000;
+}
+
+.hiddenCol{
+    visibility: hidden;
+}
+/* Recent Events Section */
+
+.recentEventsTitle{
+    padding-top: 7%;
+    padding-bottom: 2%;
+    max-width: 100%;
+    max-height: 100%;
+}
+.recentEvents {
+    margin-top: 5%;
+    padding: 5% 2%;
+    background-color: rgb(221, 216, 233, 0.35);
+}
+
+
+.recentEvent:hover{
+    background-color: rgba(87, 60, 141, 0.2);
+}
+
+.emptyEvent {
+    visibility: hidden;
+}
+
+.recentEvent>hr {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    border-width: 0.1rem;
+}
+
+.recentEvent>p {
+    /* font-size: 0.8rem; */
+    margin-top: 5%;
+    margin-bottom: 0%;
+    font-weight: bold;
+}
+
+
+.featureGrid {
+    background-image: url("Images/gogo_event.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position:relative;
+}
+
+.featureGrid>span{
+    position:absolute;
+    bottom:0;
+}
+
+.featureTitle {
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 80%;
+    vertical-align: bottom;
+    /* padding-top: 80%; */
+}
+
 /* Past Events Section */
+
+.pastEventsTitle {
+    margin-bottom: 2.5%;
+}
+
 .pastEvents {
     margin: 5%;
 }
@@ -81,7 +182,7 @@ a{
 
 .readMore>a {
     font-weight: bold;
-    color: black;
+    text-decoration: underline;
 }
 
 .singleEvent {
@@ -93,16 +194,19 @@ a{
     background-color: rgba(87, 60, 141, 0.2);
 }
 
-.eventTitle{
+.eventTitle,
+.eventTitle>h1 {
     color: #3D2A62;
     font-weight: bold;
 }
 
-
+.eventTitle {
+    text-decoration: none;
+}
 
 /* Footer */
 .footer {
-    padding: 0.5% 5%;
+    padding: 0.5%;
     background-color: #DDD8E9;
 }
 
@@ -110,8 +214,6 @@ a{
     color: #3D2A62;
     font-weight: normal;
 }
-
-
 
 
 /* Phone media query */
@@ -136,11 +238,27 @@ a{
         font-size: 0.6rem;
     }
 
+    /* About */
+    .aboutLogoLarge {
+        display: none;
+    }
+
+    .aboutLogoMobile {
+        display: inline;
+        margin: auto;
+    }
+
+    /* Recent Events */
+    .emptyEvent {
+        display: none;
+    }
+
     /* Past Events */
     .readMore {
         text-align: left;
         margin: auto;
         margin-bottom: 5%;
+        text-decoration: underline;
     }
 
     .date {

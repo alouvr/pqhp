@@ -95,11 +95,27 @@
     <!-- About -->
     <div class="about">
         <div class="row">
+            <!-- Mobile-only about logo spacing -->
+            <div class="hiddenCol col-2">
+                hidden
+            </div>
+
+            <div class="aboutLogoMobile col-6">
+                <img class="aboutLogo" src="Images/Group 38.svg">
+            </div>
+            <div class="hiddenCol col-2">
+                hidden
+            </div>
+
+        </div>
+
+        <div class="row">
             <!-- Empty Column for left spacing -->
             <div class="col-1"></div>
-            <div class="col-6 bg-primary">
+            
+            <div class="col-sm-10 col-md-6">
                 <div class="aboutBlurb">
-                    <p>
+                    <p id="aboutShort">
                         The Pittsburgh Queer History Project (PQHP) is an oral history and media
                         initiative, focusing on LGBTQ after-hours nightlife in Pittsburgh, PA from 1960 to 1990. Founded
                         by
@@ -108,17 +124,31 @@
                         nightclubs where fraternal organization charters acted as semi-legal shelters for sex and social
                         membership...
                     </p>
-                    <p>
-                        Read More
-                    </p>
+
+                        <button id="readMoreButton" onclick="myFunction()">
+                            Read More
+                        </button>
+
+                    <script>
+                        function myFunction() {
+                            var buttonString = document.getElementById("readMoreButton").innerHTML;
+                            if (buttonString == "Read More") {
+                                document.getElementById("aboutShort").innerHTML = "The Pittsburgh Queer History Project (PQHP)  is an oral history and media initiative, focusing on LGBTQ after-hours nightlife in Pittsburgh, PA from 1960 to 1990. Founded by Harrison Apple in 2012, the project began as an investigation of gay-owned-and-operated after-hours nightclubs where fraternal organization charters acted as semi-legal shelters for sex and social membership. These emergent communities contributed to a broader gay and lesbian political community of mutual aid, combatting police harassment and the AIDS epidemic while facing the swift economic decline of Pittsburgh. In the years following heavy outmigration from steel cities like Pittsburgh, these histories have become more difficult to document and pass on.";
+                                document.getElementById("readMoreButton").innerHTML = "Read Less"
+
+                            } else {
+                                document.getElementById("aboutShort").innerHTML = "The Pittsburgh Queer History Project (PQHP) is an oral history and media initiative, focusing on LGBTQ after-hours nightlife in Pittsburgh, PA from 1960 to 1990. Founded by Harrison Apple in 2012, the project began as an investigation of gay-owned-and-operated after-hours nightclubs where fraternal organization charters acted as semi-legal shelters for sex and social membership...";
+                                document.getElementById("readMoreButton").innerHTML = "Read More"
+                            }
+                        }
+                    </script>
                 </div>
             </div>
             <!-- Empty column for middle -->
-            <div class="col-1 bg-danger"></div>
-            <div class="col-3 bg-success">
-                <h1 class="aboutTitle">ABOUT</h1>
-                <h1 class="aboutTitle">THE</h1>
-                <h1 class="aboutTitle">PQHP</h1>
+            <div class="col-1"></div>
+            <!-- Hidden Column -->
+            <div class="aboutLogoLarge col-md-3">
+                <img class="aboutLogo" src="Images/Group 38.svg">
             </div>
             <!-- Empty Column for right side -->
             <div class="col-1"></div>
@@ -126,8 +156,73 @@
     </div>
 
 
+    <!-- Recent Events -->
+
+
+    <div class="recentEvents">
+        <!-- Events List -->
+        <span class="eventsList">
+            <h3 class="eventsListTitle">Events List</h3>
+            <hr class="eventsListBorder">
+        </span>
+
+        <div class="row">
+            <h5>OCTOBER 2024</h5>
+        </div>
+        <div class="recentEventsFeature row">
+            <div class="featureGrid col-md-6">
+                <a href="google.com">
+                    <span>
+                        <h1 class="featureTitle">MS89: “GOGO” in collaboration with Fungus Books</h1>
+                    </span>
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <!-- This grid part is empty, but used for spacing purposes. -->
+                <img class="recentEventsTitle" src="Images/recent_events.svg">
+                <div class="emptyEvent row">
+                    <p>APRIL 2024</p>
+                    <img src="Images/queen_of_the_megamix.png">
+                    <p>MS89 presents “Queen of the Megamix with special guest host Milan Tre'Zur”</p>
+                    <hr>
+                </div>
+
+                <!-- Featured Recent Details Here!! -->
+                <a href="google.com">
+                    <div class="recentEvent row">
+                        <p>APRIL 2024</p>
+                        <img src="Images/queen_of_the_megamix.png">
+                        <p>MS89 presents “Queen of the Megamix with special guest host Milan Tre'Zur”</p>
+                        <hr>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <!-- Featured Recent Details Here!! -->
+                <a href="google.com">
+                    <div class="recentEvent row">
+                        <p>NOVEMBER 2023</p>
+                        <img src="Images/wendi_miller_night.png">
+                        <p>MS89 presents “Wendi Miller Night: A MS89 Screening, 16MM and VHS archives of Wendi Miller”
+                        </p>
+                        <hr>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
     <!-- Past-Events -->
     <div class="pastEvents">
+
+        <div class="pastEventsTitle row">
+            <div class="col-1">
+                <img src="Images/past_events.svg">
+            </div>
+        </div>
 
         <div class="singleEvent row">
             <div class="col-sm-10 col-md-1">
@@ -195,9 +290,6 @@
 
     <!-- Footer -->
     <ul id="bottom" class="footer nav">
-        <li class="nav-item">
-            <a class="nav-link" href="index.html">Pittsburgh Queer History Project </a>
-        </li>
         <li class="nav-item">
             <a class="nav-link" href="mailto: happle@andrew.cmu.edu">Contact Us: happle@andrew.cmu.edu</a>
         </li>
