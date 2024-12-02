@@ -1,0 +1,83 @@
+* {
+  font-family: "Inter";
+}
+
+a{
+  color:#000;
+}
+
+/* Navbar */
+.navtop {
+  /* border: 1px solid #000006; */
+  background-color: #DDD8E9;
+  padding: 0.5%;
+}
+
+.nav-link {
+  color: #3D2A62;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  padding: 0.5%;
+  background-color: #DDD8E9;
+}
+
+.footerlink {
+  color: #3D2A62;
+  font-weight: normal;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: rgba(221, 216, 233, 0.35);
+}
+
+.text-primary {
+  color: #4B3F72 !important; 
+}
+
+.card {
+  background-color: rgb(255, 255, 255); 
+  border-radius: 0.5rem;
+}
+
+.card-title {
+  color: #4B3F72; 
+}
+
+.ms-3 {
+  margin-left: 1rem;
+}
+
+.my-10{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.custom-card-padding {
+  padding: 25px 100px 25px 100px;
+}
+
+main h2 {
+  font-size: 2.22rem;
+}
+
+main h3 {
+  font-size: 1.55rem;
+  color: #333;
+}
+
+main h4 {
+  font-size: 1.11rem;
+  font-weight: normal;
+}
+
+section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
