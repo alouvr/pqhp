@@ -2,9 +2,10 @@
   font-family: "Inter";
 }
 
-a{
-  color:#000;
+a {
+  color: #000;
 }
+
 
 /* Navbar */
 .navtop {
@@ -37,23 +38,23 @@ body {
 }
 
 .text-primary {
-  color: #4B3F72 !important; 
+  color: #4B3F72 !important;
 }
 
 .card {
-  background-color: rgb(255, 255, 255); 
+  background-color: rgb(255, 255, 255);
   border-radius: 0.5rem;
 }
 
 .card-title {
-  color: #4B3F72; 
+  color: #4B3F72;
 }
 
 .ms-3 {
   margin-left: 1rem;
 }
 
-.my-10{
+.my-10 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -80,4 +81,3 @@ section {
   max-width: 800px;
   margin: 0 auto;
 }
-
